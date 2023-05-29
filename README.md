@@ -115,7 +115,9 @@ npm test
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] ***
+- [ ] **[Api calls]**
+- [ ] **[Functional Components]**
+- [ ] **[Click events]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
