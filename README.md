@@ -71,7 +71,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:rachaouldbabaali/math_magicians
+  git clone https://github.com/kifle23/math_magicians.git
 ```
 
 ### Install
