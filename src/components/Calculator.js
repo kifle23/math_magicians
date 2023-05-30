@@ -1,10 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Calculator.css';
+
+function Display({ value }) {
+  return <div className="display">{value}</div>;
+}
 
 function Calculator() {
   return (
     <div className="calculator">
-      <div className="display">0</div>
+      <Display value={0} />
       <div className="buttons">
         <button type="button">AC</button>
         <button type="button">+/-</button>
@@ -41,5 +46,9 @@ function Calculator() {
     </div>
   );
 }
+
+Display.propTypes = {
+  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+};
 
 export default Calculator;
