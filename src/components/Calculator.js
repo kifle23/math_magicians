@@ -1,54 +1,82 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import Display from './Display';
 import './Calculator.css';
-
-function Display({ value }) {
-  return <div className="display">{value}</div>;
-}
+import calculate from '../logic/calculate';
 
 function Calculator() {
+  const [state, setState] = useState({
+    total: '',
+    next: null,
+    operation: null,
+  });
+  const handle = (e) => {
+    setState(() => calculate(state, e.target.innerText));
+  };
+  const { total, operation, next } = state;
   return (
     <div className="calculator">
-      <Display value={0} />
+      <Display total={Number(total)} operation={operation} next={next} />
       <div className="buttons">
-        <button type="button">AC</button>
-        <button type="button">+/-</button>
-        <button type="button">% </button>
-        <button type="button" className="operator">
+        <button type="button" onClick={handle}>
+          AC
+        </button>
+        <button type="button" onClick={handle}>
+          +/-
+        </button>
+        <button type="button" onClick={handle} value="%">
+          %
+        </button>
+        <button type="button" className="operator" onClick={handle} value="÷">
           ÷
         </button>
-        <button type="button">7</button>
-        <button type="button">8</button>
-        <button type="button">9</button>
-        <button type="button" className="operator">
+        <button type="button" onClick={handle}>
+          7
+        </button>
+        <button type="button" onClick={handle}>
+          8
+        </button>
+        <button type="button" onClick={handle}>
+          9
+        </button>
+        <button type="button" className="operator" onClick={handle} value="x">
           x
         </button>
-        <button type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button" className="operator">
+        <button type="button" onClick={handle}>
+          4
+        </button>
+        <button type="button" onClick={handle}>
+          5
+        </button>
+        <button type="button" onClick={handle}>
+          6
+        </button>
+        <button type="button" className="operator" onClick={handle} value="-">
           -
         </button>
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button" className="operator">
+        <button type="button" onClick={handle}>
+          1
+        </button>
+        <button type="button" onClick={handle}>
+          2
+        </button>
+        <button type="button" onClick={handle}>
+          3
+        </button>
+        <button type="button" className="operator" onClick={handle} value="+">
           +
         </button>
-        <button type="button" className="button-0">
+        <button type="button" className="button-0" onClick={handle}>
           0
         </button>
-        <button type="button">.</button>
-        <button type="button" className="operator">
+        <button type="button" onClick={handle}>
+          .
+        </button>
+        <button type="button" className="operator" onClick={handle}>
           =
         </button>
       </div>
     </div>
   );
 }
-
-Display.propTypes = {
-  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-};
 
 export default Calculator;
