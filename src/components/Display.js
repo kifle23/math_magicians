@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function Display({ total, operation, next }) {
   return (
     <div className="display">
-      {total}
+      {total !== 0 ? total : ''}
       {operation}
       {next}
     </div>
@@ -11,11 +11,12 @@ function Display({ total, operation, next }) {
 }
 
 Display.propTypes = {
-  total: PropTypes.number.isRequired,
+  total: PropTypes.number,
   operation: PropTypes.string,
-  next: PropTypes.number,
+  next: PropTypes.string,
 };
 Display.defaultProps = {
+  total: null,
   operation: null,
   next: null,
 };

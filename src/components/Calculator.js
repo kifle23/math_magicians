@@ -4,14 +4,18 @@ import './Calculator.css';
 import calculate from '../logic/calculate';
 
 function Calculator() {
-  const [state, setState] = useState({ total: 0, next: null, operation: null });
+  const [state, setState] = useState({
+    total: '',
+    next: null,
+    operation: null,
+  });
   const handle = (e) => {
     setState(() => calculate(state, e.target.innerText));
   };
   const { total, operation, next } = state;
   return (
     <div className="calculator">
-      <Display total={total} operation={operation} next={next} />
+      <Display total={Number(total)} operation={operation} next={next} />
       <div className="buttons">
         <button type="button" onClick={handle}>
           AC
