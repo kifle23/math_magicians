@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Display from './Display';
-import './Calculator.css';
 import calculate from '../logic/calculate';
-import Quote from './Quote';
 
 function Calculator() {
   const [state, setState] = useState({
@@ -15,69 +13,66 @@ function Calculator() {
   };
   const { total, operation, next } = state;
   return (
-    <div className="container">
-      <Quote />
-      <div className="calculator">
-        <Display total={Number(total)} operation={operation} next={next} />
-        <div className="buttons">
-          <button type="button" onClick={handle}>
-            AC
-          </button>
-          <button type="button" onClick={handle}>
-            +/-
-          </button>
-          <button type="button" onClick={handle} value="%">
-            %
-          </button>
-          <button type="button" className="operator" onClick={handle} value="÷">
-            ÷
-          </button>
-          <button type="button" onClick={handle}>
-            7
-          </button>
-          <button type="button" onClick={handle}>
-            8
-          </button>
-          <button type="button" onClick={handle}>
-            9
-          </button>
-          <button type="button" className="operator" onClick={handle} value="x">
-            x
-          </button>
-          <button type="button" onClick={handle}>
-            4
-          </button>
-          <button type="button" onClick={handle}>
-            5
-          </button>
-          <button type="button" onClick={handle}>
-            6
-          </button>
-          <button type="button" className="operator" onClick={handle} value="-">
-            -
-          </button>
-          <button type="button" onClick={handle}>
-            1
-          </button>
-          <button type="button" onClick={handle}>
-            2
-          </button>
-          <button type="button" onClick={handle}>
-            3
-          </button>
-          <button type="button" className="operator" onClick={handle} value="+">
-            +
-          </button>
-          <button type="button" className="button-0" onClick={handle}>
-            0
-          </button>
-          <button type="button" onClick={handle}>
-            .
-          </button>
-          <button type="button" className="operator" onClick={handle}>
-            =
-          </button>
-        </div>
+    <div className="calculator">
+      <Display total={Number(total)} operation={operation} next={next} />
+      <div className="buttons">
+        <button type="button" onClick={handle}>
+          AC
+        </button>
+        <button type="button" onClick={handle}>
+          +/-
+        </button>
+        <button type="button" onClick={handle} value="%">
+          %
+        </button>
+        <button type="button" className="operator" onClick={handle} value="÷">
+          ÷
+        </button>
+        <button type="button" onClick={handle}>
+          7
+        </button>
+        <button type="button" onClick={handle}>
+          8
+        </button>
+        <button type="button" onClick={handle}>
+          9
+        </button>
+        <button type="button" className="operator" onClick={handle} value="x">
+          x
+        </button>
+        <button type="button" onClick={handle}>
+          4
+        </button>
+        <button type="button" onClick={handle}>
+          5
+        </button>
+        <button type="button" onClick={handle}>
+          6
+        </button>
+        <button type="button" className="operator" onClick={handle} value="-">
+          -
+        </button>
+        <button type="button" onClick={handle}>
+          1
+        </button>
+        <button type="button" onClick={handle}>
+          2
+        </button>
+        <button type="button" onClick={handle}>
+          3
+        </button>
+        <button type="button" className="operator" onClick={handle} value="+">
+          +
+        </button>
+        <button type="button" className="button-0" onClick={handle}>
+          0
+        </button>
+        <button type="button" onClick={handle}>
+          .
+        </button>
+        <button type="button" className="operator" onClick={handle}>
+          =
+        </button>
       </div>
     </div>
   );
