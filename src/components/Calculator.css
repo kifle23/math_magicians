@@ -1,16 +1,25 @@
+.container {
+  display: inline-flex;
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+}
+
 .calculator {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: auto;
-  width: 40%;
-  min-width: 500px;
   background-color: #fff;
   box-shadow: 0 0 20px #666;
   border-radius: 2px;
-  position: absolute;
-  top: 20vh;
-  left: 30vw;
+  width: 50%;
+  min-width: 500px;
+}
+
+.quote {
+  width: 30%;
+  min-width: 200px;
 }
 
 .display {
