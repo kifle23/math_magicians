@@ -95,9 +95,7 @@ npx stylelint "**/*.{css,scss}"
 npm test
 ```
 
-### Live-Demo :rocket:
-
-- [Live-Demo](https://math-magicians-f3ue.onrender.com)
+### :rocket: [Live-Demo](https://math-magicians-f3ue.onrender.com)
 
 ## 👥 Author <a name="authors"></a>
 
