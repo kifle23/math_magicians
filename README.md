@@ -6,13 +6,13 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Live Demo](#live-demo)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -95,7 +95,9 @@ npx stylelint "**/*.{css,scss}"
 npm test
 ```
 
-### Live-Demo :rocket: [Live-link](https://math-magicians-f3ue.onrender.com)
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://math-magicians-f3ue.onrender.com//)
 
 ## 👥 Author <a name="authors"></a>
 
