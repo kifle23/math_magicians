@@ -7,7 +7,7 @@ describe('calculate', () => {
         total: null,
         next: null,
         operation: null,
-      }
+      },
     );
   });
 
@@ -21,7 +21,7 @@ describe('calculate', () => {
 
   it('should handle the case when the user presses 0 after 0 is already the next value', () => {
     expect(calculate({ total: '10', next: '0', operation: '+' }, '0')).toEqual(
-      {}
+      {},
     );
   });
 
@@ -39,7 +39,7 @@ describe('calculate', () => {
         total: '10',
         next: '0.',
         operation: '+',
-      }
+      },
     );
   });
 
@@ -66,7 +66,7 @@ describe('calculate', () => {
       operation: null,
     });
     expect(
-      calculate({ total: '15', next: null, operation: null }, '+')
+      calculate({ total: '15', next: null, operation: null }, '+'),
     ).toEqual({
       total: '15',
       next: null,
