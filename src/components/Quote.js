@@ -14,8 +14,7 @@ const Quote = () => {
   }
   return (
     <div className="quote">
-      <h1>{author}</h1>
-      <p>{res}</p>
+      <p>{`${res} - ${author}`}</p>
     </div>
   );
 };
