@@ -97,7 +97,7 @@ npm test
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://math-magicians-f3ue.onrender.com//)
+- [Live Demo Link](https://math-magicians-f3ue.onrender.com/)
 
 ## 👥 Author <a name="authors"></a>
 
