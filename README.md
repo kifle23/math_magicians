@@ -13,6 +13,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
+  - [Live-Demo](#live-demo)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -94,6 +95,10 @@ npx eslint "**/*.{js,jsx}"
 npx stylelint "**/*.{css,scss}"
 npm test
 ```
+
+### :rocket: Live-Demo
+
+- [Live-Demo](https://math-magicians-f3ue.onrender.com)
 
 ## 👥 Author <a name="authors"></a>
 
