@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display does not render total when it is 0 1`] = `
+<div
+  className="display"
+/>
+`;
+
+exports[`Display renders correctly with default props 1`] = `
+<div
+  className="display"
+/>
+`;
+
+exports[`Display renders correctly with props 1`] = `
+<div
+  className="display"
+>
+  10
+  +
+  5
+</div>
+`;

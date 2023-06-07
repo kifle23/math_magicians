@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote renders correctly 1`] = `
+<div
+  className="quote"
+>
+  <p>
+    Education is not preparation for life; education is life itself. - John Dewey
+  </p>
+</div>
+`;
